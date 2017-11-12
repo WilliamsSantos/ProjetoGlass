@@ -1,0 +1,26 @@
+@charset"utf-8";
+
+
+figure#radio-tv img#radio-tv{
+	width: 900px;
+	position: relative;
+	margin-left: -40px;
+	margin-right: auto;
+	display: block;
+	margin-top: 10px;
+}
+video#oculos-video{
+	position: absolute;
+	margin-left: 82px;
+	margin-top: -480px; 
+	width: 450px;
+	margin-bottom: 0px;
+	border-color: rgba(0,0,0,.6);
+}
+audio#oculos-audio{
+	position: absolute;
+	margin-left: 575px;
+	margin-top: -85px; 
+	width: 300px;
+
+}

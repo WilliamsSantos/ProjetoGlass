@@ -1,0 +1,133 @@
+<!BODYTYPE html>
+
+<html lang="pt-bt">
+<Head>
+    <meta charset="UTF-8"/>
+    <Title> Tudo sobre Google glass </Title>
+    <meta name="viewport" content="widht=device-widht"/>
+    <Link rel="stylesheet" type="text/css" href="_css/estilo.css" />
+    <link rel="stylesheet" type="text/css" href="_css/form.css"/>
+    <meta name="viewport" content="widht=device-widht"/>
+</Head> 
+    
+    <!--aba de scripts!-->
+
+    <script language= "javascript" src="_javascript/funcoes.js"></script>
+
+<Body>
+
+<Div id="interface">
+
+    <header id="cabecalho">
+    <hgroup>
+        <h1>Google Glass</h1>
+        <h2>A revolução do Google está chegando</h2>
+    </hgroup>
+
+        <img  id="icone" src="_imagens/glass-oculos-preto-peq.png"/>
+    
+<nav id="menu">
+ 
+    <h1>Menu Principal</h1>
+     <ul>
+        <li onmouseover="mudafoto('_imagens/home')" onmouseout="mudafoto('_imagens/contato')"><a href="index11.html">Home</a></li>
+        <li onmouseover="mudafoto('_imagens/especificacoes')" onmouseout="mudafoto('_imagens/contato')"><a href="specs.html">Especificações</a></li>
+        <li onmouseover="mudafoto('_imagens/fotos')" onmouseout="mudafoto('_imagens/contato')"><a href="fotos.html">Fotos</a></li>
+        <li onmouseover="mudafoto('_imagens/multimidia')" onmouseout="mudafoto('_imagens/contato')"><a href="multimidia.html">Multimídia</a></li>
+        <li onmouseover="mudafoto('_imagens/contato')" onmouseout="mudafoto('_imagens/contato')"><a href="fale-conosco.html">Fale conosco</a></li>
+    </ul>
+</nav>  
+    </header>
+
+<header id="cabecalho-arquivo">    
+    <hgroup id="direitos">
+        <h3 class="top">Fale Conosco > Contato</h3>
+        <h1>Formulário de Contato</h1>
+       <h3> por Williams Santos</h3>
+        <h3 class="direita">Atualizado em 18/Março/2017</h3>
+    </hgroup>
+</header>
+
+
+
+<form method="post" id="tcontato" action="mailto:googlecontato@hotmail.com">
+
+    <fildset id="nome">
+        <legend>Identificação do Usuário</legend>   
+        <p><label for="cnome">Nome:</label>
+            <input type="text" name="tnome" id="cnome" size="20" maxlength="30" placeholder=" Nome completo"/></p>
+        <p><label for="csenha">Senha:</label>
+            <input type="password" name="tsenha" id="csenha" size="8" maxlength="8" placeholder=" 8 digitos"/></p>
+        <p><label for="cemail">E-mail:</label>
+            <input type="email" name="temail" id="cemail" size="20" maxlength="40" placeholder=" Digite o seu Email"/></p>
+    </fildset>    
+   
+    <fildset id="sexo">
+        <legend>Sexo:</legend>
+           <p><input type="radio" name="tsex" id="cmasc" checked/><label for="cmasc">Masculino</label></p>
+           <p><input type="radio" name="tsex" id="cfem"/><label for="cfem">Feminino</label></p>
+            
+        <p>Data de Nascimento:<input type="date" name="data" id="data"/></p>   
+    
+     </fildset>
+<fildset id="eUsuario">
+    <legend>Endereço do Usuário</legend>
+        <p><labrel for="clogradouro">Logradouro:</label><input type="text" name="tlogradouro" id="clogradouro" size="20" maxlength="30" placeholder="Rua,Av,Bairro..."/></p>
+        <p><label for="cnumero">Número:</label><input type="number" name="tnumero" id="cnumero" min="0" max="1999"/></p>
+        
+        <p><label id="testados">Estado:</label>
+            <select name="testados" id="cestados">            
+            <optgroup label="Região sudeste">
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="SP">São paulo</option>   
+                <option Value="MG">Minas gerais</option>
+             </optgroup>   
+             
+             <optgroup label="Região Sul">                      
+                <option value="PR">Paraná</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="RS">Rio Grande do Sul</option>
+             </optgroup>   
+            
+            </select></p>
+        <p><label id="ccidade">Cidade:</label>
+            <input type="text" name="tcidade" id="ccidade" size="20" maxlength="40" placeholder="Cidade" list="cidade">
+            <datalist id="cidade">
+                <option value="Rio de janeiro"></option>
+                <option value="Niteroi"></option>
+                <option value="Belford roxo"></option>
+                <option value="Bom jardim"></option>
+                <option value="Cabo frio"></option>
+            </datalist> 
+        </p>
+</fildset>
+
+<fildset id="mUsuario">
+    <legend>Mensagem do Usuário</legend>
+    <p><label id="cusu">Grau de Urgência:</label>
+        Min<input type="range" name="Tusu" id="cusu" min="0" max="10" step="2">Máx</p>
+    <p><label id="">Mensagem:</label>
+    <textarea name="tmsg" id="cmsg" cols="50" row="100" placeholder="Digite a sua mensagem"></textarea></p>
+</fildset>
+
+<fildset id="quero">
+   <legend>Quero um Google Glass</legend>
+   <p>Gostaria de adquirir um Google Glass quando disponível</p>
+   <p> Cor:</p>
+   <p> Quantidade:</p>
+   <p>Preço Total: R$</p>
+</fildset>
+
+</form>
+
+[BOTÃO ENVIAR]
+
+
+<footer id="rodape">
+    <h3 style="text-align: center">Copyright &copy; 2017 - by Williams Santos<br/>
+    <a href="https://www.facebook.com/williams.pereira.520" target="blank">Facebook</a> | Twitter</h3>
+</footer>
+
+</Div>
+</Body>
+</html>
